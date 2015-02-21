@@ -1,27 +1,28 @@
 fileFormatVersion: 2
-guid: c175a507d2116ae4eb3767d41512c7b3
+guid: 25a5f1f6edce1534db0590d3c0a185e1
 TextureImporter:
   fileIDToRecycleName:
-    21300000: const_nohat_0
-    21300002: const_nohat_1
-    21300004: const_nohat_2
-    21300006: const_nohat_3
-    21300008: const_nohat_4
-    21300010: const_nohat_5
-    21300012: const_nohat_6
-    21300014: const_nohat_7
-    21300016: const_nohat_8
-    21300018: const_nohat_9
-    21300020: const_nohat_10
-    21300022: const_nohat_11
-    21300024: const_nohat_12
-    21300026: const_nohat_13
-    21300028: const_nohat_14
-    21300030: const_nohat_15
-    21300032: const_nohat_16
-    21300034: const_nohat_17
-    21300036: const_nohat_18
-    21300038: const_nohat_19
+    21300000: crossbeams_0
+    21300002: crossbeams_1
+    21300004: crossbeams_2
+    21300006: crossbeams_3
+    21300008: crossbeams_4
+    21300010: crossbeams_5
+    21300012: crossbeams_6
+    21300014: crossbeams_7
+    21300016: crossbeams_8
+    21300018: crossbeams_9
+    21300020: crossbeams_10
+    21300022: crossbeams_11
+    21300024: crossbeams_12
+    21300026: crossbeams_13
+    21300028: crossbeams_14
+    21300030: crossbeams_15
+    21300032: crossbeams_16
+    21300034: crossbeams_17
+    21300036: crossbeams_18
+    21300038: crossbeams_19
+    21300040: crossbeams_20
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -59,208 +60,218 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 1
   alphaIsTransparency: 1
-  textureType: 8
+  textureType: 5
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: const_nohat_0
+    - name: crossbeams_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 32
-        height: 32
-      alignment: 7
+        y: 48
+        width: 16
+        height: 16
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_1
+    - name: crossbeams_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crossbeams_2
       rect:
         serializedVersion: 2
         x: 32
-        y: 128
-        width: 32
-        height: 32
-      alignment: 7
+        y: 48
+        width: 16
+        height: 16
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_2
+    - name: crossbeams_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crossbeams_4
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
-        width: 32
-        height: 32
-      alignment: 7
+        y: 48
+        width: 16
+        height: 16
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 128
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_6
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_7
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_9
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_10
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_11
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_12
+    - name: crossbeams_5
       rect:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 32
-        height: 32
-      alignment: 7
+        width: 16
+        height: 16
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_13
+    - name: crossbeams_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crossbeams_7
       rect:
         serializedVersion: 2
         x: 32
         y: 32
-        width: 32
-        height: 32
-      alignment: 7
+        width: 16
+        height: 16
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_14
+    - name: crossbeams_8
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crossbeams_9
       rect:
         serializedVersion: 2
         x: 64
         y: 32
-        width: 32
-        height: 32
-      alignment: 7
+        width: 16
+        height: 16
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_15
+    - name: crossbeams_10
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
-      alignment: 7
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_16
+    - name: crossbeams_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crossbeams_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crossbeams_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crossbeams_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crossbeams_15
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
-      alignment: 7
+        width: 16
+        height: 16
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_17
+    - name: crossbeams_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crossbeams_17
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 32
-        height: 32
-      alignment: 7
+        width: 16
+        height: 16
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_18
+    - name: crossbeams_18
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: crossbeams_19
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 32
-        height: 32
-      alignment: 7
+        width: 16
+        height: 16
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: const_nohat_19
+    - name: crossbeams_20
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
+        x: 48
+        y: 25
+        width: 16
+        height: 16
+      alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 

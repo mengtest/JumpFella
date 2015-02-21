@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour 
+public class PlayerController : MonoBehaviour
 {
 	bool facingLeft = true;
 	bool grounded = false;
+	static bool hasHat = false;
+	static bool damaged = false;
+	static bool recovering = false;
 	
 	public float maxSpeed = 60f;
 	public float groundRadius = 1f;
@@ -15,12 +18,15 @@ public class PlayerController : MonoBehaviour
 	public Transform groundCheck;
 	public LayerMask whatIsGround;
 	
-	Animator anim;
+	static Animator anim;
+	SpriteRenderer hatRender;
+	public GameObject hat;
 	
 	// Use this for initialization
 	void Start () 
 	{
 		anim = GetComponent<Animator>();
+		hatRender = hat.GetComponentInChildren<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
@@ -35,12 +41,23 @@ public class PlayerController : MonoBehaviour
 		
 		anim.SetFloat("Speed", Mathf.Abs(move));
 		
-		rigidbody2D.velocity = new Vector2(move * maxSpeed, rigidbody2D.velocity.y);
+		if(damaged == true && recovering == true)
+		{
+			Hop();
+			//damaged = false;
+		}
+		else if(damaged == false && recovering == false)
+		{
+			rigidbody2D.velocity = new Vector2(move * maxSpeed, rigidbody2D.velocity.y);
+		}
 		
 		if(move > 0 && facingLeft)
 			Flip ();
 		else if(move < 0 && !facingLeft)
 			Flip ();
+			
+		if(grounded)
+			recovering = false;
 	}
 	
 	void Update()
@@ -50,6 +67,11 @@ public class PlayerController : MonoBehaviour
 			anim.SetBool("Ground", false);
 			rigidbody2D.AddForce(new Vector2(0, jumpForce));
 		}
+		
+		if(hasHat == true)
+			hatRender.enabled = true;
+		else if(hasHat == false)
+			hatRender.enabled = false;
 	}
 	
 	void Flip()
@@ -58,5 +80,55 @@ public class PlayerController : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+	
+	public static void HatGive()
+	{
+		if(hasHat == false)
+			{
+				hasHat = true;
+				Debug.Log("Hat Gained");
+			}
+	}
+	
+	public static void Damage()
+	{
+		if(hasHat == true)
+		{
+			//hasHat = false;
+			damaged = true;
+			recovering = true;
+			anim.SetTrigger("Damage");
+			Debug.Log("Hat Lost");
+		}
+		else if(hasHat == false)
+		{
+			KillPlayer();
+			Debug.Log("Player Dying");
+		}
+	}
+	
+	void Hop()
+	{
+		if(facingLeft == true)
+			{
+				rigidbody2D.AddForce(new Vector2(100, 150),ForceMode2D.Impulse);
+				Debug.Log ("Bounce Left");
+				damaged = false;
+				//yield return new WaitForSeconds(1);
+			}
+		else if(facingLeft == false)
+			{
+				rigidbody2D.AddForce(new Vector2(-100, 150),ForceMode2D.Impulse);
+				Debug.Log("Bounce Right");
+				damaged = false;
+				//yield return new WaitForSeconds(1);
+			}
+			
+	}
+	
+	public static void KillPlayer()
+	{
+		Debug.Log("Player Died");
 	}
 }
